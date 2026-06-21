@@ -4,7 +4,7 @@
 This repository contains gene prediction and annotation results obtained from the SPAdes-assembled *Lactiplantibacillus plantarum* genome using Prodigal.
 
 ## Project Information
-- **Organism:** *Lactiplantibacillus plantarum*
+- **Organism:** *Lactiplantibacillus plantarum* WCFS1
 - **Assembler:** SPAdes
 - **Gene Prediction Tool:** Prodigal v2.6.3
 - **Genetic Code Table:** 11 (Bacterial and Archaeal)
@@ -47,6 +47,23 @@ PRODIGAL_Gene_Prediction/
 - SPAdes Genome Assembler
 - Ubuntu 22.04 (WSL)
 - Git and GitHub
+## Workflow
+
+```text
+Raw Reads
+   │
+   ▼
+fastp (Quality Control)
+   │
+   ▼
+SPAdes (Genome Assembly)
+   │
+   ▼
+QUAST (Assembly Assessment)
+   │
+   ▼
+Prodigal (Gene Prediction)
+```
 
 ## Author
 Abha  
